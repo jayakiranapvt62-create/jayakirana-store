@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Stainless Steel Spoon Set",
+    "category": "kitchen",
+    "price": 249,
+    "image": "spoon-set.jpg",
+    "branches": {
+      "delgoda": { "qty": 15, "available": true },
+      "nittabuwa": { "qty": 8, "available": true },
+      "piliyandala": { "qty": 22, "available": true },
+      "ragama": { "qty": 0, "available": false }
+    },
+    "quick": true
+  },
+  {
+    "id": 2,
+    "name": "Plastic Storage Box 10L",
+    "category": "plastic",
+    "price": 399,
+    "image": "storage-box.jpg",
+    "branches": {
+      "delgoda": { "qty": 30, "available": true },
+      "nittabuwa": { "qty": 25, "available": true },
+      "piliyandala": { "qty": 40, "available": true },
+      "ragama": { "qty": 15, "available": true }
+    },
+    "quick": true
+  }
+]

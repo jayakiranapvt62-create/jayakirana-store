@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayakirana Store - Best Deals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>Free Delivery on orders above RS 999 | Call: 0771095641</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Jayakirana Logo" /> <!-- ROOT -->
+      <h1>Jayakirana Store</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search in Jayakirana..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <nav>
+      <a href="#branches">Branches</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="hero">
+    <div class="slide active">
+      <img src="https://via.placeholder.com/1200x400/FF6B6B/FFFFFF?text=FLASH+SALE+UP+TO+50%25+OFF" alt="Sale">
+      <div class="hero-text">
+        <h2>Flash Sale!</h2>
+        <p>Up to 50% Off on Kitchen & Toys</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://via.placeholder.com/1200x400/4ECDC4/FFFFFF?text=NEW+ARRIVALS" alt="New">
+      <div class="hero-text">
+        <h2>New Arrivals</h2>
+        <p>Fancy Hardware & Plastic</p>
+        <a href="#products" class="btn">Explore</a>
+      </div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">Left Arrow</button>
+    <button class="next" onclick="changeSlide(1)">Right Arrow</button>
+  </section>
+
+  <!-- Quick Movement -->
+  <section class="quick-section" data-aos="fade-up">
+    <h2>Quick Movement Items</h2>
+    <div class="carousel-container">
+      <button class="carousel-prev">Left Arrow</button>
+      <div id="quickCarousel" class="carousel"></div>
+      <button class="carousel-next">Right Arrow</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="categories" data-aos="fade-up" data-aos-delay="200">
+    <button data-cat="all" class="active">All</button>
+    <button data-cat="fancy hardware">Fancy Hardware</button>
+    <button data-cat="kitchen">Kitchen</button>
+    <button data-cat="plastic">Plastic</button>
+    <button data-cat="toy">Toy</button>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products-grid" data-aos="fade-up" data-aos-delay="300"></section>
+
+  <!-- Branches -->
+  <section id="branches" class="branches" data-aos="zoom-in" data-aos-delay="100">
+    <h2>Our Branches</h2>
+    <div class="branch-grid">
+      <div class="branch-card" data-aos="flip-left">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Piliyandala</h3>
+        <p><i class="fas fa-phone"></i> 0771095641</p>
+        <a href="tel:0771095641" class="call-btn">Call Now</a>
+      </div>
+      <div class="branch-card" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Delgoda</h3>
+        <p><i class="fas fa-phone"></i> 0771095638</p>
+        <a href="tel:0771095638" class="call-btn">Call Now</a>
+      </div>
+      <div class="branch-card" data-aos="flip-left" data-aos-delay="200">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Ragama</h3>
+        <p><i class="fas fa-phone"></i> 0771095642</p>
+        <a href="tel:0771095642" class="call-btn">Call Now</a>
+      </div>
+      <div class="branch-card" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Nittabuwa</h3>
+        <p><i class="fas fa-phone"></i> 0771095640</p>
+        <a href="tel:0771095640" class="call-btn">Call Now</a>
+      </div>
+      <div class="branch-card repair" data-aos="flip-left" data-aos-delay="400">
+        <i class="fas fa-tools"></i>
+        <h3>Repair Center</h3>
+        <p><i class="fas fa-phone"></i> 0768233535</p>
+        <a href="tel:0768233535" class="call-btn">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <input type="text" placeholder="Your Name" required />
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Your Email" required />
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="input-group">
+          <input type="tel" placeholder="Your Phone" required />
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="input-group">
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <i class="fas fa-comment"></i>
+        </div>
+        <button type="submit" class="submit-btn">
+          <span>Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+      <p id="formMsg"></p>
+    </div>
+  </section>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/94771095638?text=Hi%20Jayakirana!%20I%20saw%20your%20website..." 
+     class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>© 2025 Jayakirana Store. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
