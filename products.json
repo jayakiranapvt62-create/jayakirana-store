@@ -5,6 +5,7 @@
     "category": "kitchen",
     "price": 249,
     "image": "spoon-set.jpg",
+    "description": "6-piece set, durable stainless steel",
     "branches": {
       "delgoda": { "qty": 15, "available": true },
       "nittabuwa": { "qty": 8, "available": true },
@@ -19,6 +20,7 @@
     "category": "plastic",
     "price": 399,
     "image": "storage-box.jpg",
+    "description": "Stackable, airtight lid, blue color",
     "branches": {
       "delgoda": { "qty": 30, "available": true },
       "nittabuwa": { "qty": 25, "available": true },
@@ -26,5 +28,35 @@
       "ragama": { "qty": 15, "available": true }
     },
     "quick": true
+  },
+  {
+    "id": 3,
+    "name": "Fancy LED Wall Light",
+    "category": "fancy hardware",
+    "price": 899,
+    "image": "led-light.jpg",
+    "description": "Warm white, remote control, energy saving",
+    "branches": {
+      "delgoda": { "qty": 5, "available": true },
+      "nittabuwa": { "qty": 0, "available": false },
+      "piliyandala": { "qty": 12, "available": true },
+      "ragama": { "qty": 3, "available": true }
+    },
+    "quick": false
+  },
+  {
+    "id": 4,
+    "name": "Remote Control Car",
+    "category": "toy",
+    "price": 1299,
+    "image": "toy-car.jpg",
+    "description": "Battery operated, 1:16 scale, red",
+    "branches": {
+      "delgoda": { "qty": 0, "available": false },
+      "nittabuwa": { "qty": 2, "available": true },
+      "piliyandala": { "qty": 0, "available": false },
+      "ragama": { "qty": 1, "available": true }
+    },
+    "quick": false
   }
 ]
